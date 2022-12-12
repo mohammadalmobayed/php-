@@ -1,4 +1,10 @@
-  <!DOCTYPE html>
+<?php 
+if(isset($_POST['name'])){
+  $name = $_POST['name'];
+
+}
+?>
+<!DOCTYPE html>
   <html>
   <head>
     <title></title>
@@ -11,9 +17,10 @@
   <input type="submit" value="Submit Name">
   </form>
 
+  <h3> hello <?php echo $name ?? null ?>  </h3>
   </body>
   </html>
-  <?php
-  $name = $_POST["name];
-  echo "<h3> Hello $name </h3>";
-  ?>
+
+
+  
+  
