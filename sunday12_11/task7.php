@@ -1,5 +1,4 @@
 <?php
-$text = 'PHP Tutorial';
-$text = preg_replace('/(\b[a-z])/i','<span style="color:red;">\1</span>',$text);
+$text = "<span style='color:red;'>P</span>HP <span style='color:red;'>T</span>utorial";
 echo $text;
 ?>
